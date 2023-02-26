@@ -1,0 +1,11 @@
+mat-chip-listbox {
+    padding: 30px 0;
+}
+
+table {
+    width: 100%;
+}
+
+th.mat-sort-header-sorted {
+    color: black;
+}

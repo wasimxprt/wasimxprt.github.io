@@ -1,0 +1,18 @@
+<div class="grid-container">
+    <h1 class="mat-h1">Tutorial</h1>
+    <mat-card>
+        <mat-card-content>
+            <!-- <span [ngClass]="{red:number%2 == 0, green:number%2 !=0}">{{number}}</span> -->
+            <div appHighlight [number]="number" [divisibleBy]="divisibleBy"></div>
+
+            <div class="schools">
+                <span *ngIf="schoolLoading">Loading school data...</span>
+                <span>{{schoolsCount}}</span>
+            </div>
+            <div class="hospitals">
+                <span *ngIf="hospitalLoading">Loading hospital data...</span>
+                <span>{{hospitalsCount}}</span>
+            </div>
+        </mat-card-content>
+    </mat-card>
+</div>
